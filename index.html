@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple E-Commerce</title>
+</head>
+<body>
+    <header>
+        <h1>Simple E-Commerce</h1>
+        <div id="cart">
+            <span id="cart-count">0</span> items
+        </div>
+    </header>
+    <main>
+        <div id="category-filter">
+            <button class="category-button" data-category="all">All</button>
+            <button class="category-button" data-category="electronics">Electronics</button>
+            <button class="category-button" data-category="clothing">Clothing</button>
+        </div>
+        <div id="product-container">
+            <!-- Products will be dynamically generated here -->
+        </div>
+        <div id="cart-display">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
